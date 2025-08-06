@@ -1,8 +1,8 @@
 #Requires AutoHotkey v2.0
 #SingleInstance Force
 
-; Win+1 => Toggle Windows Terminal
-#1::
+; Win+Enter => Toggle Windows Terminal
+#Enter::
 {
     if WinExist("ahk_exe WindowsTerminal.exe")
         WinActivate()
@@ -10,8 +10,8 @@
         Run("wt.exe")
 }
 
-; Win+2 => Toggle Firefox
-#2::
+; Win+W => Toggle Firefox
+#W::
 {
     if WinExist("ahk_exe firefox.exe")
         WinActivate
@@ -19,15 +19,15 @@
         Run "C:\Program Files\Mozilla Firefox\firefox.exe"
 }
 
-; Win+3 => Toggle Teams
-#3::
+; Win+N => Toggle Teams
+#N::
 {
     if WinExist("ahk_exe ms-teams.exe")
         WinActivate
 }
 
-; Win+4 => Toggle Outlook
-#4::
+; Win+M => Toggle Outlook
+#M::
 {
     if WinExist("ahk_exe outlook.exe")
         WinActivate
