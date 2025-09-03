@@ -32,3 +32,12 @@
     if WinExist("ahk_exe outlook.exe")
         WinActivate
 }
+
+; Win+I => Toggle Rider
+#I::
+{
+    if WinExist("ahk_exe rider64.exe")
+        WinActivate
+    else
+        Run "C:\Program Files\JetBrains\Rider\bin\rider64.exe"
+}
