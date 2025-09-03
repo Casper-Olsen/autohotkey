@@ -41,3 +41,12 @@
     else
         Run "C:\Program Files\JetBrains\Rider\bin\rider64.exe"
 }
+
+; Win+H => Toggle Postman
+#H::
+{
+    if WinExist("ahk_exe Postman.exe")
+        WinActivate
+    else
+        Run "%appdata%\Microsoft\Windows\Start Menu\Programs\Postman"  ; Adjust path if needed
+}
