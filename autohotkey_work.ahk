@@ -38,6 +38,7 @@
 {
     if WinExist("ahk_exe rider64.exe")
         WinActivate
+}
 
 ; Win+H => Toggle Postman
 #H::
